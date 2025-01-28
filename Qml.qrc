@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/qml">
+        <file alias="Main.qml">src/Main.qml</file>
+        <file alias="Tray.qml">src/FlightMap/Tray.qml</file>
+        <file alias="StatusBar.qml">src/FlightMap/StatusBar.qml</file>
+        <file alias="FlightMap.qml">src/FlightMap/FlightMap.qml</file>
+        <file alias="Toolbox.qml">src/FlightMap/Toolbox.qml</file>
+        <file alias="LinkButton.qml">src/FlightMap/LinkButton.qml</file>
+        <file alias="ConnectionLinkChooser.qml">src/FlightMap/ConnectionLinkChooser.qml</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,7 @@
+{
+    "recommendations": [
+        "theqtcompany.qt-cpp-pack",
+        "ms-vscode.cmake-tools",
+        "ms-vscode.cpptools-extension-pack",
+    ]
+}
