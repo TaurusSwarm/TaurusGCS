@@ -11,6 +11,8 @@ find_package(MAVSDK REQUIRED)
 
 qt_add_executable(TaurusGCS
     src/main.cpp
+    src/TaurusGCS.h
+    src/TaurusGCS.cpp
     Qml.qrc
     Resources.qrc
 )
@@ -26,4 +28,13 @@ target_link_libraries(TaurusGCS PUBLIC
     MAVSDK::mavsdk
     Core
     FlightMap
+)
+
+# Set the install prefix to /usr/local
+set(CMAKE_INSTALL_PREFIX /usr/local CACHE STRING "Install prefix" FORCE)
+
+# Include directory for Core module
+target_include_directories(TaurusGCS PUBLIC
+    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/src/Core>
+    $<INSTALL_INTERFACE:include>
 )

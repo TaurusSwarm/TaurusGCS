@@ -5,7 +5,7 @@ Item {
     id:         trayMenu
     
     Button {
-        id:                 
+        id:                 btnLink                 
         text:               qsTr("Link")
         font.pixelSize:     15
         width:              100

@@ -2,9 +2,22 @@ cmake_minimum_required(VERSION 3.16)
 
 find_package(Qt6 REQUIRED COMPONENTS Core)
 
+set(HEADERS 
+    SwarmManager.h
+    Drone.h
+    Telemetry.h
+)
+
+set(SOURCES
+    SwarmManager.cpp
+    Drone.cpp 
+    Telemetry.cpp
+    Swarm.cpp
+)
+
 qt_add_library(Core STATIC
-    connection.cpp
-    connection.hpp
+    ${HEADERS}
+    ${SOURCES}
 )
 
 qt_standard_project_setup()

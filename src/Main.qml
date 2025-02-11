@@ -13,4 +13,20 @@ ApplicationWindow
         id:                     flightMap
         visible:                true
     }
+
+    Rectangle {
+        width: 640
+        height: 480
+        Column {
+            Text {
+                text: taurusGCS.swarmManager.leader ? "Latitude: " + taurusGCS.swarmManager.leader.getTelemetryData().latitude : "No leader"
+            }
+            Text {
+                text: taurusGCS.swarmManager.leader ? "Longitude: " + taurusGCS.swarmManager.leader.getTelemetryData().longitude : "No leader"
+            }
+            Text {
+                text: taurusGCS.swarmManager.leader ? "Altitude: " + taurusGCS.swarmManager.leader.getTelemetryData().altitude_meters : "No leader"
+            }
+        }
+    }
 }
